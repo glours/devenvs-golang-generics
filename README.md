@@ -5,7 +5,7 @@ This repository show you how to create a Docker Environment base image to use Go
 ## Build your own image
 You can use [Docker Buildx](https://github.com/docker/buildx) to build multiarch images:
 ```shell
-docker buildx build --builder multi --platform=linux/amd64,linux/arm64 --push -t gloursdocker/devenv-golang18  -f .
+docker buildx build --builder multi --platform=linux/amd64,linux/arm64 --push -t gloursdocker/devenv-golang18 .
 ```
 
 ## Use the already built image
